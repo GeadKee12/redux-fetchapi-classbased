@@ -9,10 +9,8 @@ import usersReducer from "./usersReducer";
 //     usersReducer,
 //   });
 console.log(usersReducer);
-const rootReducer = () => {
-  combineReducers({
-    key1: usersReducer,
-  });
-};
+const rootReducer = combineReducers({
+  usersReducer,
+});
 
 export default rootReducer;

@@ -9,14 +9,14 @@ export const get_users = () => (dispatch) => {
     // if (data.status !== 200) {
     //   message.error("Failed to Get Users");
     // } else {
-    //   // dispatch(get_users_success(data.users))
+    // dispatch(get_users_success(data));
     // }
   });
 };
 
-export const get_users_success = (users) => {
+export const get_users_success = (data) => {
   return {
     type: ActionType.GET_USERS,
-    users,
+    data,
   };
 };
